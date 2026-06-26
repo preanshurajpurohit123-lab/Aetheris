@@ -1,0 +1,324 @@
+MASTER_CONTEXT.md
+
+Part 2 — Product Ecosystem & Complete Product Overview
+
+------------------------------------------------------------------------
+
+Product Ecosystem
+
+Aetheris Trade is not a single application.
+
+It is a connected financial education ecosystem where every module
+contributes to a single learning journey.
+
+    Landing Website
+            │
+            ▼
+    Authentication
+            │
+            ▼
+    Dashboard
+            │
+     ┌──────┼──────────────┐
+     │      │              │
+     ▼      ▼              ▼
+    Market Portfolio     AI Coach
+     │      │              │
+     └──────┼──────────────┘
+            │
+            ▼
+    Learning Academy
+            │
+            ▼
+    Competitions
+            │
+            ▼
+    Leaderboard
+            │
+            ▼
+    Profile & Settings
+
+Product Positioning
+
+Aetheris Trade is positioned as a premium educational platform.
+
+It is not:
+
+-   A brokerage
+-   A stock prediction platform
+-   A signal provider
+-   A gambling application
+
+It is:
+
+-   Paper Trading Platform
+-   AI Learning Platform
+-   Portfolio Simulator
+-   Financial Education Platform
+-   Investment Practice Environment
+
+Product Pillars
+
+The complete product is built around six pillars.
+
+Pillar 1 — Learn
+
+Purpose
+
+Teach investing from beginner to advanced level.
+
+Includes
+
+-   Learning Academy
+-   Courses
+-   Quizzes
+-   Certificates
+-   AI Explanations
+
+Pillar 2 — Practice
+
+Purpose
+
+Allow users to trade without financial risk.
+
+Includes
+
+-   Paper Trading
+-   Virtual Portfolio
+-   Order Execution
+-   Trade History
+
+Pillar 3 — Analyze
+
+Purpose
+
+Help users understand their decisions.
+
+Includes
+
+-   Portfolio Analytics
+-   AI Portfolio Review
+-   Risk Analysis
+-   Performance Tracking
+
+Pillar 4 — Explore
+
+Purpose
+
+Help users discover market opportunities.
+
+Includes
+
+-   Market Explorer
+-   Search
+-   Stock Details
+-   Categories
+-   Watchlist
+
+Pillar 5 — Compete
+
+Purpose
+
+Increase engagement through healthy competition.
+
+Includes
+
+-   Competitions
+-   Rankings
+-   Badges
+-   Achievements
+-   Leaderboards
+
+Pillar 6 — Grow
+
+Purpose
+
+Encourage continuous improvement.
+
+Includes
+
+-   Learning Progress
+-   AI Recommendations
+-   Weekly Reports
+-   Performance Insights
+
+Complete Feature Map
+
+    Aetheris Trade
+
+    ├── Landing Website
+    ├── Authentication
+    ├── Dashboard
+    ├── Market Explorer
+    ├── Paper Trading
+    ├── Portfolio
+    ├── Watchlist
+    ├── AI Coach
+    ├── Learning Academy
+    ├── Competitions
+    ├── Leaderboards
+    ├── Notifications
+    ├── Profile
+    ├── Settings
+    └── Admin Panel
+
+User Journey
+
+Discover Platform
+
+↓
+
+Create Account
+
+↓
+
+Complete Onboarding
+
+↓
+
+Explore Market
+
+↓
+
+Learn Basics
+
+↓
+
+Start Paper Trading
+
+↓
+
+Build Portfolio
+
+↓
+
+Receive AI Feedback
+
+↓
+
+Improve Strategy
+
+↓
+
+Join Competitions
+
+↓
+
+Track Progress
+
+↓
+
+Continue Learning
+
+Core Modules
+
+Landing Website
+
+Purpose - Brand introduction - Feature showcase - User acquisition -
+Conversion
+
+Authentication
+
+Purpose - Secure registration - Login - Session management
+
+Dashboard
+
+Purpose Provide a complete overview of user activity.
+
+Displays - Portfolio Summary - Market Snapshot - AI Insights - Learning
+Progress - Watchlist - Quick Actions
+
+Market Explorer
+
+Purpose Discover and analyze companies.
+
+Capabilities - Search - Filters - Charts - Categories - AI Summary
+
+Paper Trading
+
+Purpose Simulate realistic investing.
+
+Capabilities - Buy - Sell - Order Preview - Portfolio Update - Trade
+History
+
+Portfolio
+
+Purpose Track investment performance.
+
+Includes - Holdings - Allocation - Profit & Loss - Analytics - Risk
+Analysis
+
+AI Coach
+
+Purpose Act as the user’s financial mentor.
+
+Responsibilities - Answer questions - Explain concepts - Analyze
+portfolios - Review trades - Recommend learning content
+
+Learning Academy
+
+Purpose Structured financial education.
+
+Modules - Courses - Lessons - Quizzes - Progress - Certificates -
+Glossary
+
+Competitions
+
+Purpose Motivate learning through challenges.
+
+Includes - Weekly Events - Monthly Events - Seasonal Challenges -
+University Competitions
+
+Leaderboards
+
+Purpose Display healthy competition.
+
+Ranking Types - Weekly - Monthly - All Time
+
+Notifications
+
+Purpose Keep users informed.
+
+Categories - Trade Updates - AI Insights - Competition Alerts - Learning
+Reminders - System Notifications
+
+Admin Panel
+
+Purpose Manage the complete ecosystem.
+
+Includes - User Management - Competition Management - Course
+Management - Reports - Analytics - AI Monitoring
+
+Product Principles
+
+Every feature must satisfy at least one of the following:
+
+-   Teach users something.
+-   Simplify investing.
+-   Improve decision-making.
+-   Increase confidence.
+-   Enhance learning.
+-   Improve user experience.
+
+If a feature satisfies none of these, it should not be developed.
+
+Product Success Metrics
+
+The ecosystem is successful when:
+
+-   Users learn consistently.
+-   Trading confidence improves.
+-   Course completion increases.
+-   Portfolio quality improves.
+-   AI engagement remains meaningful.
+-   Users return because of value, not addiction.
+
+AI Understanding Summary
+
+An AI working on Aetheris Trade should understand that:
+
+-   Education is always the highest priority.
+-   AI supports learning rather than making decisions.
+-   Paper trading exists to build experience.
+-   Every module connects to a unified learning journey.
+-   Simplicity, trust, and performance are core requirements.
