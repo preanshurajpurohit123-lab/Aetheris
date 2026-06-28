@@ -1,0 +1,264 @@
+MASTER_CONTEXT.md
+
+Part 3 — Complete Technical Architecture
+
+------------------------------------------------------------------------
+
+System Overview
+
+Aetheris Trade follows a modern, scalable, AI-first full-stack
+architecture designed for performance, maintainability, and long-term
+scalability.
+
+The architecture separates presentation, business logic, data access, AI
+services, and infrastructure into independent layers.
+
+High-Level Architecture
+
+                        Users
+                          │
+                          ▼
+                Next.js Frontend
+                          │
+                          ▼
+                API Gateway (Next.js)
+                          │
+          ┌───────────────┼────────────────┐
+          ▼               ▼                ▼
+     Business Logic     AI Services     Authentication
+          │               │                │
+          └───────────────┼────────────────┘
+                          ▼
+                      PostgreSQL
+                          │
+                          ▼
+                 External Integrations
+
+Technology Stack
+
+Frontend
+
+-   Next.js
+-   React
+-   TypeScript
+-   Tailwind CSS
+-   Framer Motion
+
+Backend
+
+-   Next.js API Routes
+-   Prisma ORM
+-   PostgreSQL
+
+Authentication
+
+-   Clerk
+
+AI Layer
+
+-   OpenAI API
+
+Future Support - Anthropic - Google Gemini - Local Models
+
+Charts
+
+-   TradingView Lightweight Charts
+
+Deployment
+
+Frontend - Vercel
+
+Backend - Vercel Serverless
+
+Database - PostgreSQL
+
+Architecture Layers
+
+    Presentation Layer
+            │
+            ▼
+    Application Layer
+            │
+            ▼
+    Business Logic Layer
+            │
+            ▼
+    Repository Layer
+            │
+            ▼
+    Database Layer
+
+Each layer has a single responsibility.
+
+Frontend Architecture
+
+    app/
+    ↓
+    Layouts
+    ↓
+    Pages
+    ↓
+    Features
+    ↓
+    Components
+    ↓
+    Hooks
+    ↓
+    Services
+    ↓
+    Utilities
+
+Rules - Feature-based organization - Server Components first - Client
+Components only when necessary - Shared UI library - Responsive by
+default
+
+Backend Architecture
+
+    Request
+    ↓
+    Middleware
+    ↓
+    Validation
+    ↓
+    Controller
+    ↓
+    Service
+    ↓
+    Repository
+    ↓
+    Database
+    ↓
+    Response
+
+Responsibilities
+
+Middleware
+
+-   Authentication
+-   Logging
+-   Rate Limiting
+-   Security
+
+Validation
+
+-   Request validation
+-   Schema validation
+-   Sanitization
+
+Controller
+
+-   Request handling
+-   Response formatting
+
+Service
+
+-   Business logic
+-   AI orchestration
+-   Portfolio calculations
+
+Repository
+
+-   Database operations
+-   Query optimization
+-   Transactions
+
+Database Architecture
+
+Core Modules - Users - Portfolio - Transactions - Stocks - Market Data -
+Watchlist - Learning - Competitions - AI Conversations - Notifications
+
+Database Principles - Normalized - Secure - Indexed - Scalable -
+Transaction-safe
+
+API Architecture
+
+REST API
+
+/api/v1
+
+Modules - Authentication - Users - Portfolio - Market - Trades -
+Watchlist - Learning - AI - Competitions - Leaderboard - Notifications -
+Admin
+
+API Rules - RESTful - Versioned - Stateless - JSON only - Typed
+responses
+
+Authentication Flow
+
+User ↓ Clerk Authentication ↓ JWT Validation ↓ Role Verification ↓
+Protected API ↓ Database
+
+Roles - Guest - User - Admin
+
+AI Architecture
+
+User Question ↓ Prompt Builder ↓ Context Engine ↓ LLM ↓ Response
+Validator ↓ User
+
+AI Responsibilities - Educational guidance - Portfolio review - Stock
+explanation - Learning recommendations
+
+AI Restrictions - No guaranteed predictions - No financial promises -
+Always explain reasoning - Always communicate uncertainty
+
+Market Data Flow
+
+Market Source ↓ Data Processing ↓ Database ↓ API ↓ Frontend ↓ Charts
+
+Paper Trading Flow
+
+User ↓ Order Preview ↓ Validation ↓ Portfolio Update ↓ Transaction
+Record ↓ Analytics Update ↓ UI Refresh
+
+Learning Flow
+
+Course ↓ Lesson ↓ Quiz ↓ Result ↓ Progress Update ↓ Certificate
+
+Competition Flow
+
+Competition ↓ Join ↓ Trade ↓ Leaderboard ↓ Final Ranking ↓ Achievement
+
+Infrastructure Principles
+
+The infrastructure must be: - Cloud-native - Modular - Secure -
+Observable - Highly maintainable
+
+Performance Targets
+
+Frontend - Lighthouse ≥ 90 - First Load < 2 seconds
+
+Backend - API < 500 ms (standard) - Trading < 700 ms - AI < 5 seconds
+
+Database - Indexed queries - Optimized joins - Efficient pagination
+
+Security Principles
+
+Every layer must enforce: - Authentication - Authorization -
+Validation - Logging - Encryption - Rate Limiting
+
+Security is mandatory, not optional.
+
+Scalability Strategy
+
+Current Target - 10,000 users
+
+Future Target - 1,000,000+ users
+
+Scaling Methods - Read Replicas - Redis Cache - CDN - Background
+Workers - Database Partitioning - Horizontal Scaling
+
+Technical Decision Rules
+
+When multiple solutions exist, always prefer the one that is: 1. Easier
+to maintain. 2. More scalable. 3. More secure. 4. Better documented. 5.
+Consistent with the existing architecture.
+
+AI Context Summary
+
+Any AI contributing to Aetheris Trade must understand: - The project
+follows a layered architecture. - Every module is independent but
+connected. - APIs are the communication layer. - Business logic must
+never exist in UI components. - Performance, security, and
+maintainability always take priority over shortcuts.
+
+End of Part 3
